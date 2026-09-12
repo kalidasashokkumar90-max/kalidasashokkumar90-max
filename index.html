@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#05060f">
+  <meta name="description" content="KALIDASAN A — Computer Engineering student, software & AI enthusiast, freelance developer. Building web apps, AI assistants and intelligent systems.">
+  <title>KALIDASAN A — Computer Engineering Student · Software & AI Enthusiast</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script type="importmap">
+    { "imports": { "three": "https://unpkg.com/three@0.160.0/build/three.module.js" } }
+  </script>
+  <style>
+    #preloader{position:fixed;inset:0;z-index:9999;background:#05060f;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;transition:opacity .4s cubic-bezier(.16,1,.3,1),transform .4s cubic-bezier(.16,1,.3,1)}
+    #preloader.is-hidden{opacity:0;transform:translateY(-12px)}
+    .nav{position:fixed;top:0;left:0;right:0;z-index:1000}
+  </style>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-tile">KA</div>
+    <div class="preloader-track"><div class="preloader-fill" data-preloader-fill></div></div>
+    <div class="preloader-count" data-preloader-count>00%</div>
+  </div>
+
+  <div class="atmosphere" data-hero-parallax="orbs" aria-hidden="true">
+    <div class="orb orb-a"></div>
+    <div class="orb orb-b"></div>
+  </div>
+
+  <div class="cursor" data-cursor aria-hidden="true"></div>
+
+  <header class="nav" id="navbar">
+    <div class="nav-progress" data-scroll-progress aria-hidden="true"></div>
+    <div class="nav-inner">
+      <a class="nav-logo" href="#home">KALIDASAN<span class="logo-dot">.</span><span class="logo-ghost">A</span></a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="#home" data-nav-link>HOME</a></li>
+          <li><a href="#about" data-nav-link>ABOUT</a></li>
+          <li><a href="#projects" data-nav-link>PROJECTS</a></li>
+          <li><a href="#experience" data-nav-link>EXPERIENCE</a></li>
+          <li><a href="#contact" data-nav-link>CONTACT</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Menu">
+    <button class="mobile-close" type="button" data-mobile-close aria-label="Close menu">×</button>
+    <ul class="mobile-links">
+      <li><a href="#home" data-mobile-link>HOME</a></li>
+      <li><a href="#about" data-mobile-link>ABOUT</a></li>
+      <li><a href="#projects" data-mobile-link>PROJECTS</a></li>
+      <li><a href="#experience" data-mobile-link>EXPERIENCE</a></li>
+      <li><a href="#contact" data-mobile-link>CONTACT</a></li>
+    </ul>
+  </div>
+
+  <main id="main">
+
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <span id="home" class="anchor" aria-hidden="true"></span>
+      <div class="hero-bg" data-hero-parallax="bg">
+        <canvas id="hero-canvas" aria-hidden="true"></canvas>
+        <span class="stage-halo" aria-hidden="true"></span>
+        <img class="hero-portrait" src="images/portrait.png" alt="" aria-hidden="true">
+        <span class="hero-scrim" aria-hidden="true"></span>
+        <div class="hero-vignette" aria-hidden="true"></div>
+      </div>
+      <div class="container hero-grid">
+        <div class="hero-text" data-hero-parallax="text">
+          <p class="eyebrow hl-eyebrow"><span class="eyebrow-code">//</span> COMPUTER ENGINEERING STUDENT</p>
+          <h1 class="hero-title hl-title" id="hero-title" data-text="KALIDASAN A">KALIDASAN A</h1>
+          <p class="lead hero-lead hl-lead">
+            I turn ideas into working software.
+            <span class="typewriter" data-typewriter aria-hidden="true"><span data-type-text></span><span class="type-caret" aria-hidden="true"></span></span>
+            <span class="sr-only">Software & AI enthusiast, freelance developer, AI assistant builder.</span>
+          </p>
+          <div class="hero-cta hl-cta">
+            <a class="btn btn-primary" data-magnetic href="#projects">View Projects</a>
+            <a class="btn btn-ghost" data-magnetic href="#contact">Contact Me</a>
+          </div>
+          <div class="hero-stats hl-stats">
+            <div class="stat"><span class="stat-value"><span data-count="3">0</span>+</span><span class="stat-label">PROJECTS</span></div>
+            <div class="stat"><span class="stat-value"><span data-count="2">0</span></span><span class="stat-label">INTERNSHIPS</span></div>
+            <div class="stat"><span class="stat-value">∞</span><span class="stat-label">CURIOSITY</span></div>
+          </div>
+        </div>
+      </div>
+      <a class="scroll-down" href="#about" aria-label="Scroll to About section">⌄</a>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow" data-reveal><span class="eyebrow-code">//</span> 01. ABOUT</p>
+          <h2 id="about-title" data-reveal data-delay="100">ABOUT / SKILLS</h2>
+          <span class="section-line" data-reveal="line" data-delay="200" aria-hidden="true"></span>
+        </header>
+        <div class="about-grid">
+          <div class="about-bio" data-reveal>
+            <p class="lead">Computer Engineering diploma student and freelance developer focused on software development, artificial intelligence, and emerging technologies.</p>
+            <p>I build software and web projects with AI-assisted development tools, with internship exposure to AI, machine learning, and robotics. I'm driven by practical problem-solving, rapid learning, tech communities, and turning ideas into working prototypes.</p>
+            <ul class="quick-facts">
+              <li><span class="fact-key">ROLE</span><span>Student & Freelance Developer</span></li>
+              <li><span class="fact-key">EDUCATION</span><span>Diploma in Computer Engineering</span></li>
+              <li><span class="fact-key">INSTITUTE</span><span>AKM Polytechnic College</span></li>
+              <li><span class="fact-key">FOCUS</span><span>AI Assistants · Web Apps · Robotics</span></li>
+              <li><span class="fact-key">STATUS</span><span><span class="status-dot" aria-hidden="true"></span> Available for freelance</span></li>
+            </ul>
+          </div>
+          <div class="about-skills" data-reveal="right">
+            <div class="skill-group">
+              <span class="skill-chip chip-cat">PROGRAMMING & WEB</span>
+              <div class="skill-chips">
+                <span class="skill-chip" data-reveal data-delay="0"><span class="chip-dot" aria-hidden="true"></span>Python</span>
+                <span class="skill-chip" data-reveal data-delay="60"><span class="chip-dot" aria-hidden="true"></span>PHP</span>
+                <span class="skill-chip" data-reveal data-delay="120"><span class="chip-dot" aria-hidden="true"></span>HTML</span>
+                <span class="skill-chip" data-reveal data-delay="180"><span class="chip-dot" aria-hidden="true"></span>CSS</span>
+                <span class="skill-chip" data-reveal data-delay="240"><span class="chip-dot" aria-hidden="true"></span>JavaScript</span>
+                <span class="skill-chip" data-reveal data-delay="300"><span class="chip-dot" aria-hidden="true"></span>React</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <span class="skill-chip chip-cat">AI / ML</span>
+              <div class="skill-chips">
+                <span class="skill-chip" data-reveal data-delay="0"><span class="chip-dot" aria-hidden="true"></span>AI-Assisted Dev</span>
+                <span class="skill-chip" data-reveal data-delay="60"><span class="chip-dot" aria-hidden="true"></span>ML Fundamentals</span>
+                <span class="skill-chip" data-reveal data-delay="120"><span class="chip-dot" aria-hidden="true"></span>Local AI / LLMs</span>
+                <span class="skill-chip" data-reveal data-delay="180"><span class="chip-dot" aria-hidden="true"></span>Ollama</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <span class="skill-chip chip-cat">BACKEND & DATA</span>
+              <div class="skill-chips">
+                <span class="skill-chip" data-reveal data-delay="0"><span class="chip-dot" aria-hidden="true"></span>PHP / MySQL</span>
+                <span class="skill-chip" data-reveal data-delay="60"><span class="chip-dot" aria-hidden="true"></span>REST / API</span>
+                <span class="skill-chip" data-reveal data-delay="120"><span class="chip-dot" aria-hidden="true"></span>Databases</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <span class="skill-chip chip-cat">TOOLS & MORE</span>
+              <div class="skill-chips">
+                <span class="skill-chip" data-reveal data-delay="0"><span class="chip-dot" aria-hidden="true"></span>Git & GitHub</span>
+                <span class="skill-chip" data-reveal data-delay="60"><span class="chip-dot" aria-hidden="true"></span>VS Code</span>
+                <span class="skill-chip" data-reveal data-delay="120"><span class="chip-dot" aria-hidden="true"></span>XAMPP</span>
+                <span class="skill-chip" data-reveal data-delay="180"><span class="chip-dot" aria-hidden="true"></span>Robotics</span>
+              </div>
+            </div>
+            <div class="skill-bars" data-reveal data-delay="120">
+              <div class="skill-bar" data-bar="88" style="--fd:0ms">
+                <span class="skill-bar-label">PYTHON / JS</span>
+                <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+                <span class="skill-bar-value">88%</span>
+              </div>
+              <div class="skill-bar" data-bar="82" style="--fd:120ms">
+                <span class="skill-bar-label">REACT / WEB</span>
+                <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+                <span class="skill-bar-value">82%</span>
+              </div>
+              <div class="skill-bar" data-bar="80" style="--fd:240ms">
+                <span class="skill-bar-label">AI / ML</span>
+                <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+                <span class="skill-bar-value">80%</span>
+              </div>
+              <div class="skill-bar" data-bar="78" style="--fd:360ms">
+                <span class="skill-bar-label">LOCAL LLMS / OLLAMA</span>
+                <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+                <span class="skill-bar-value">78%</span>
+              </div>
+              <div class="skill-bar" data-bar="75" style="--fd:480ms">
+                <span class="skill-bar-label">PHP / MYSQL</span>
+                <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+                <span class="skill-bar-value">75%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow" data-reveal><span class="eyebrow-code">//</span> 02. PROJECTS</p>
+          <h2 id="projects-title" data-reveal data-delay="100">SELECTED WORK</h2>
+          <span class="section-line" data-reveal="line" data-delay="200" aria-hidden="true"></span>
+        </header>
+        <div class="projects-grid">
+          <div class="project-tilt" data-reveal data-delay="0">
+            <a class="project-card" href="#contact" aria-label="Vikky — personal AI assistant">
+              <div class="project-media" aria-hidden="true">
+                <div class="project-art art-1"><span class="project-glyph">//VIKKY</span></div>
+                <span class="corner-tag">AI ASSISTANT</span>
+                <span class="scanline"></span>
+              </div>
+              <div class="project-body">
+                <h3>Vikky</h3>
+                <p class="project-desc">Personal AI assistant connecting an LLM with voice interaction, app launching, memory, and automation — built in modular Python.</p>
+                <ul class="project-tags"><li>Python</li><li>LLMs</li><li>Voice</li><li>Automation</li></ul>
+              </div>
+            </a>
+          </div>
+          <div class="project-tilt" data-reveal data-delay="120">
+            <a class="project-card" href="#contact" aria-label="Online Medicare — patient-doctor platform">
+              <div class="project-media" aria-hidden="true">
+                <div class="project-art art-2"><span class="project-glyph">//MEDICARE</span></div>
+                <span class="corner-tag">HEALTH TECH</span>
+                <span class="scanline"></span>
+              </div>
+              <div class="project-body">
+                <h3>Online Medicare</h3>
+                <p class="project-desc">Patient–doctor web platform with role-based workflows, clinic selection, approvals, messaging, prescriptions and medication reminders.</p>
+                <ul class="project-tags"><li>PHP/MySQL</li><li>Web App</li><li>UI/UX</li></ul>
+              </div>
+            </a>
+          </div>
+          <div class="project-tilt" data-reveal data-delay="240">
+            <a class="project-card" href="#contact" aria-label="Real-time sign language recognition">
+              <div class="project-media" aria-hidden="true">
+                <div class="project-art art-3"><span class="project-glyph">//SIGN</span></div>
+                <span class="corner-tag">COMPUTER VISION</span>
+                <span class="scanline"></span>
+              </div>
+              <div class="project-body">
+                <h3>Sign Language Recognition</h3>
+                <p class="project-desc">Computer-vision system that analyzes hand gestures through a camera and translates sign-language gestures into letters and words in real time.</p>
+                <ul class="project-tags"><li>Python</li><li>Computer Vision</li><li>ML</li></ul>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow" data-reveal><span class="eyebrow-code">//</span> 03. EXPERIENCE</p>
+          <h2 id="experience-title" data-reveal data-delay="100">TIMELINE</h2>
+          <span class="section-line" data-reveal="line" data-delay="200" aria-hidden="true"></span>
+        </header>
+        <div class="timeline" id="timeline">
+          <span class="timeline-rail" aria-hidden="true"></span>
+          <span class="timeline-draw" aria-hidden="true"></span>
+          <ol class="timeline-list" aria-label="Career timeline">
+          <li class="timeline-item">
+            <span class="timeline-node" aria-hidden="true"></span>
+            <div class="timeline-card" data-reveal="left" data-delay="0">
+              <p class="mono-label timeline-year">PRESENT</p>
+              <h3>Freelance Developer</h3>
+              <p class="timeline-company">Self-employed · Remote</p>
+              <p class="timeline-desc">Develop software applications and websites using modern workflows and AI-assisted tools; prototype and experiment with emerging technologies for personal and client projects.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-node" aria-hidden="true"></span>
+            <div class="timeline-card" data-reveal="right" data-delay="150">
+              <p class="mono-label timeline-year">INTERNSHIP</p>
+              <h3>AI · Machine Learning & Robotics Intern</h3>
+              <p class="timeline-company">Hands-on Internship Program</p>
+              <p class="timeline-desc">Completed hands-on exposure covering AI, ML, and robotics fundamentals; applied concepts through practical, project-based exercises.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-node" aria-hidden="true"></span>
+            <div class="timeline-card" data-reveal="left" data-delay="300">
+              <p class="mono-label timeline-year">ACADEMIC</p>
+              <h3>Diploma in Computer Engineering</h3>
+              <p class="timeline-company">AKM Polytechnic College · Expected 2027</p>
+              <p class="timeline-desc">State Board of Technical Education — building a strong foundation across programming, web development, databases, and emerging tech.</p>
+            </div>
+          </li>
+        </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow" data-reveal><span class="eyebrow-code">//</span> 04. CONTACT</p>
+          <h2 id="contact-title" data-reveal data-delay="100">GET IN TOUCH</h2>
+          <span class="section-line" data-reveal="line" data-delay="200" aria-hidden="true"></span>
+        </header>
+        <div class="contact-grid">
+          <form class="contact-form" data-reveal data-form novalidate>
+            <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+            <div class="field-row">
+              <div class="field" style="--fd:280ms">
+                <label for="field-name">Name</label>
+                <input id="field-name" name="name" type="text" autocomplete="name" placeholder="Your name" aria-describedby="name-msg" required>
+                <small class="field-msg" id="name-msg" data-msg><span class="msg-icon" aria-hidden="true"></span><span data-msg-text></span></small>
+              </div>
+              <div class="field" style="--fd:360ms">
+                <label for="field-email">Email</label>
+                <input id="field-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" aria-describedby="email-msg" required>
+                <small class="field-msg" id="email-msg" data-msg><span class="msg-icon" aria-hidden="true"></span><span data-msg-text></span></small>
+              </div>
+            </div>
+            <div class="field" style="--fd:440ms">
+              <label for="field-message">Message</label>
+              <textarea id="field-message" name="message" rows="5" placeholder="Tell me about your project..." aria-describedby="message-msg" required></textarea>
+              <small class="field-msg" id="message-msg" data-msg><span class="msg-icon" aria-hidden="true"></span><span data-msg-text></span></small>
+            </div>
+            <div class="field" style="--fd:600ms">
+              <button class="btn btn-primary" type="submit" data-magnetic>Send Message</button>
+            </div>
+          </form>
+          <div class="contact-info" data-reveal data-delay="100">
+            <h3>Let's build something electric.</h3>
+            <p class="lead">Have a project, a freelance gig, or an experiment in mind? My inbox is always open.</p>
+            <p class="small contact-email">
+              <a class="mono-link" href="mailto:kalidasashokkumar90@gmail.com">kalidasashokkumar90@gmail.com</a>
+              <span class="contact-divider" aria-hidden="true">·</span>
+              <a class="mono-link" href="tel:+916235771523">+91 62357 71523</a>
+            </p>
+            <div class="contact-socials" data-reveal data-delay="160">
+              <a class="social-btn" href="mailto:kalidasashokkumar90@gmail.com" style="--fd:0ms" aria-label="Email Kalidasan"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
+              <a class="social-btn" href="https://github.com/kalidasashokkumar90-max" target="_blank" rel="noopener" style="--fd:80ms" aria-label="GitHub profile"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.49 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05a9.36 9.36 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.59.69.49A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg></a>
+              <a class="social-btn" href="https://linkedin.com/in/kalidas-ashok-30b161392" target="_blank" rel="noopener" style="--fd:160ms" aria-label="LinkedIn profile"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05a3.74 3.74 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
+              <a class="social-btn" href="tel:+916235771523" style="--fd:240ms" aria-label="Call +91 62357 71523"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+            </div>
+          </div>
+        </div>
+        <div class="form-success" data-form-success hidden>
+          <p class="success-icon" aria-hidden="true">✓</p>
+          <h3>Message sent</h3>
+          <p class="lead">Thanks for reaching out — I'll get back to you within 48 hours.</p>
+          <button class="btn btn-ghost btn-sm" type="button" data-form-reset>Send another message</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-note">© 2026 KALIDASAN A</p>
+      <p class="footer-note footer-tech">COMPUTER ENGINEERING STUDENT · SOFTWARE & AI ENTHUSIAST</p>
+      <a class="back-top" href="#hero">BACK TO TOP ↑</a>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
