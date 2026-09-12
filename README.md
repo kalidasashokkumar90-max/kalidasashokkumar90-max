@@ -1,3 +1,8 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="dark_mode.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="light_mode.svg" />
+  <img alt="kalidasashokkumar90-max's GitHub profile" src="dark_mode.svg" />
+</picture>
 # 👋 Hi, I'm Kalidasan A.
 
 ### Computer Engineering Student | AI Builder | Developer
