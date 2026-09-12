@@ -1,34 +1,63 @@
-## 🚀 Projects I'm Currently Building
+# 👋 Hi, I'm Kalidasan A.
 
-### 🤖 VIKKY — Virtual Intelligence Kernel for You
-A personal AI assistant designed to combine AI, voice interaction, memory, automation, and computer control into one intelligent system.
+### Computer Engineering Student | AI Builder | Developer
 
-**Tech:** Python • Ollama • Whisper • SQLite • Automation
-
----
-
-### 🏥 Online Medicare
-A patient-doctor healthcare platform with role-based dashboards, doctor/patient management, prescriptions, medication reminders, and clinic management.
-
-**Tech:** PHP • MySQL • HTML • CSS • JavaScript
+I’m a Computer Engineering student passionate about **Artificial Intelligence, software development, automation, and building technology that solves real-world problems.**
 
 ---
 
-### 🤟 Real-Time Sign Language Translator
-A computer-vision project that uses a camera to recognize hand gestures and interpret sign language in real time.
+## 🚀 What I'm Working On
 
-**Tech:** Python • Computer Vision • MediaPipe • Machine Learning
-
----
-
-### 🏠 AI-Powered Home Automation
-An experimental system connecting an AI voice assistant with smart devices to control things such as lights, screens, TV, and other IoT devices.
-
-**Tech:** Python • AI • IoT • Voice Assistant
+- 🤖 Artificial Intelligence & AI-powered applications
+- 💻 Web Development
+- ⚙️ Automation & Personal AI Assistants
+- 🧠 Machine Learning
+- 🌐 Innovative software projects
 
 ---
 
-### 🌐 AI-Powered Browser
-Exploring the development of a custom web browser with AI capabilities integrated directly into the browsing experience.
+## 🛠️ Technologies
 
-**Tech:** Web Technologies • Python • AI
+**Languages & Development**
+
+`Python` `C` `Java` `PHP` `JavaScript` `HTML` `CSS`
+
+**AI & Tools**
+
+`AI` `Machine Learning` `Ollama` `Whisper` `Git` `GitHub`
+
+**Web & Database**
+
+`React` `PHP` `MySQL` `XAMPP`
+
+---
+
+## 🌐 My Portfolio
+
+### 👉 [🚀 Visit My Portfolio](https://kalidasashokkumar90-max.github.io/kalidasashokkumar90-max/)
+
+Explore my:
+
+- 👨‍💻 Projects
+- 🧠 Skills
+- 🎓 Experience & Journey
+- 🤖 AI work
+- 📬 Contact information
+
+---
+
+## 📌 Featured Project
+
+### VIKKY — Virtual Intelligence Kernel for You
+
+A personal AI assistant designed to combine **AI, voice interaction, automation, memory, and computer control** into one intelligent system.
+
+---
+
+## 🎯 My Goal
+
+> Build useful technology, learn continuously, and turn ideas into real-world solutions.
+
+---
+
+⭐ **Thanks for visiting my profile!**
